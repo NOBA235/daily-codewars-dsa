@@ -25,8 +25,7 @@
 //category B: 114 books = 25 (BKWRK) + 89 (BTSQZ)
 //category C: 50 books (CDXEF)
 //category W: 0 books
-
-
+ 
 function stockList(listOfArt, listOfCat) {
   if (listOfArt.length === 0 || listOfCat.length === 0) {
     return "";
