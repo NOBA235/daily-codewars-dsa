@@ -7,7 +7,7 @@
 //ote: If a number is a multiple of both 3 and 5, only count it once.
 
 
-//1.using loop
+//1.using loop 
 function sumOfMultiples(num){
     let sum=0;
     for(i=0;i <= num; i++){

@@ -29,7 +29,6 @@ function solution(digits) {
   return max;
 }
 
-
 /*----------slice mmethod---------*/
 
 // This is the best solution for the kata
