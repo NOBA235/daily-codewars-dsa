@@ -47,3 +47,32 @@ function validBraces(braces) {
   // Check if all braces were matched
   return stack.length === 0;
 }
+
+
+//Using Array Method
+
+
+function validBraces(braces) {
+  const stack = [];
+  
+  for (let char of braces) {
+    switch (char) {
+      case '(':
+      case '[':
+      case '{':
+        stack.push(char);
+        break;
+      case ')':
+        if (stack.pop() !== '(') return false;
+        break;
+      case ']':
+        if (stack.pop() !== '[') return false;
+        break;
+      case '}':
+        if (stack.pop() !== '{') return false;
+        break;
+    }
+  }
+  
+  return stack.length === 0;
+}
