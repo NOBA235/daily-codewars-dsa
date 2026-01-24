@@ -15,3 +15,7 @@ Examples
 function removeUrlAnchor(url) {
   return url.split('#')[0];
 }
+
+//python version
+//def remove_url_anchor(url):
+   // return url.split('#')[0]
