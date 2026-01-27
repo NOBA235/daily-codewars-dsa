@@ -24,3 +24,29 @@ function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
   
   return parseDate(currentDate) <= parseDate(expirationDate);
 }
+
+
+
+//python version
+
+/*
+from datetime import datetime
+
+def check_coupon(entered_code, correct_code, current_date, expiration_date):
+    # 1. Compare codes
+    if entered_code != correct_code:
+        return False
+    
+    # 2. Parse dates and compare
+    def parse_date(date_str):
+        # Convert string to datetime object
+        # Remove comma after the day and parse
+        return datetime.strptime(date_str.replace(',', ''), "%B %d %Y")
+    
+    current = parse_date(current_date)
+    expiration = parse_date(expiration_date)
+    
+    # Coupon is valid on the expiration day, invalid the day after
+    return current <= expiration
+
+*/
