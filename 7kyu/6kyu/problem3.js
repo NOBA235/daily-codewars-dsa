@@ -20,3 +20,13 @@ function sumDigits(number) {
     .split('')
     .reduce((sum, digit) => sum + Number(digit), 0);
 }
+
+
+//python version
+
+/*
+def sum_digits(number):
+    return sum(int(digit) for digit in str(abs(number)))
+
+
+ */
