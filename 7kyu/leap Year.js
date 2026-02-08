@@ -19,3 +19,19 @@ function isLeapYear(year) {
 console.log(isLeapYear(2024)); // true
 console.log(isLeapYear(1900)); // false
 console.log(isLeapYear(2000)); // true
+   
+
+/**
+ def is_leap_year(year):
+    if year % 400 == 0:
+        return True
+    if year % 100 == 0:
+        return False
+    return year % 4 == 0
+
+# Example
+print(is_leap_year(2024))  # True
+print(is_leap_year(1900))  # False
+print(is_leap_year(2000))  # True
+
+ */
